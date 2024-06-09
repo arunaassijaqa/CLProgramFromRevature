@@ -3,6 +3,7 @@ package com.instagram.view;
 import java.util.Scanner;
 
 import com.instagram.controller.InstagramController;
+import com.instagram.controller.InstagramControllerInterface;
 
 public class InstagramView {
 
@@ -33,7 +34,7 @@ public class InstagramView {
 		//for static variable and function system will generate memory and load those properties into that memory
 		//but for non static variable and function system will not create any memory so we have to create object to access non static properties
 		
-		InstagramController iw=new InstagramController();  //receptionist
+		InstagramControllerInterface iw=new InstagramController();  //receptionist
 		
 		switch(choice) {
 		case 1: iw.createProfile();
